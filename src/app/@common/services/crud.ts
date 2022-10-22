@@ -1,8 +1,9 @@
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { environment } from 'src/environments/environment';
 import { ApiUtil } from './../utils/api.util';
 
-const prefix = ApiUtil.prefixes.local;
+const prefix = environment.production ? ApiUtil.prefixes.mocklab : ApiUtil.prefixes.local;
 
 export class CrudService<I, ID = string, F = any> {
   constructor(protected http: HttpClient, protected endpoint: string) {}
