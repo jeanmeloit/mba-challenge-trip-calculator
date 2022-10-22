@@ -5,9 +5,10 @@ import { TravelRoutingModule } from './travel-routing.module';
 import { TravelComponent } from './travel.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { CommonsModule } from '@common/commons.module';
+import { SummaryComponent } from './summary/summary.component';
 
 @NgModule({
-  declarations: [TravelComponent, CheckoutComponent],
+  declarations: [TravelComponent, CheckoutComponent, SummaryComponent],
   imports: [CommonModule, TravelRoutingModule, CommonsModule],
 })
 export class TravelModule {}

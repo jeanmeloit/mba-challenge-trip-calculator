@@ -7,6 +7,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { SliderModule } from 'primeng/slider';
+import { MenubarModule } from 'primeng/menubar';
 
 const PRIME_NG = [
   CardModule,
@@ -14,7 +15,8 @@ const PRIME_NG = [
   DropdownModule,
   InputNumberModule,
   RadioButtonModule,
-  SliderModule
+  SliderModule,
+  MenubarModule
 ];
 
 @NgModule({
