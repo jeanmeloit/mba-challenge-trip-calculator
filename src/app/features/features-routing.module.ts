@@ -9,7 +9,7 @@ const routes: Routes = [
     children: [
       { path: '', redirectTo: 'travel', pathMatch: 'full' },
       {
-        path: '',
+        path: 'travel',
         loadChildren: () =>
           import('./travel/travel.module').then((m) => m.TravelModule),
       },
